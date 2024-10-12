@@ -1,0 +1,17 @@
+docker start my_container 启动
+docker stop my_container 停止
+docker kill my_container 终止
+docker restart my_container 重启
+docker run --name my_container ubuntu 创建并启动容器
+docker ps -a 列出所有容器
+docker ps 列出启动的容器
+docker rm 删除容器
+docker rmi 删除镜像
+docker logs 日志
+docker inspect 容器详细信息
+docker exec -it my_container /bin/bash 进入
+exit 退出容器
+挂载
+
+
+/home/zcy/anaconda3/etc/profile.d/conda.sh

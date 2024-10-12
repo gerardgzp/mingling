@@ -1,0 +1,41 @@
+前端：
+使用vue框架写的
+代码位置：Z:\vue_pre_image
+部署位置：
+192.168.1.187服务器中的
+7e904734aada容器
+容器内：/etc/nginx/apps
+启动调试：
+在windows下的Z:\vue_pre_image文件更改代码，
+可先运行npm run serve先在本地运行起来调试
+调试通之后再运行npm run build打包更新dist文件，替换到容器内
+后端：
+使用flask框架写的
+代码位置:E:\git_project
+部署位置：
+192.168.1.187服务器中的
+8671da809a3d容器
+启动调试：
+在windows下E:\git_project更改代码或在GitLab上下载flask_pre_data代码
+脚本和爬虫也在里面，可以先移出
+linux下激活后端(使用xshell，登录服务器192.168.1.187，账密zcy；sinx1234)：
+root密码：sinx1234
+路径：
+cd /home/zcy/project/flask_pre_image
+sudo su #root
+sudo docker ps # 查看运行的环境
+sudo docker exec -it 8671da809a3d /bin/bash # 进入容器
+容器内：cd flask_pre_image # cd到项目下
+source /etc/profile # 生效配置文件
+conda activate test1
+python app.py # 运行python启动项目
+端口占用：
+netstat -ntlp
+kill -9加pid号
+##############3.9解释器路径：/home/zcy/.conda/envs/pre_img_env/bin/python3.9
+#########################source venv/bin/activate # 激活虚拟环境
+
+GitLab:
+ip：http://192.168.1.136:3000/users/sign_in
+账号：wuyingdong
+密码：13631890992

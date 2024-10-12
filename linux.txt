@@ -1,0 +1,44 @@
+Linux
+
+环境变量
+vim ~/.bashrc
+~/.bashrc
+激活
+source ~/.bashrc
+anaconda文件夹移动：
+~/anaconda3/bin/conda init
+source ~/.bashrc
+///////////////////////////////
+安装conda（全在docker中进行）
+先从清华源下载anaconda安装文件.sh
+bash ...................sh 安装conda
+更改路径
+完成安装
+初始化
+source ~/anaconda3/bin/activate
+conda init
+设置不自动打开bese环境
+source ~/.bashrc
+conda config --set auto_activate_base false
+source ~/.bashrc
+conda env list
+///////////////////////////////
+cp -r 复制
+删除当前目录下的所有内容***************************
+rm -rf ./*
+查看显卡信息
+nvidia-smi
+移动文件夹及内容
+cp -r path1 path2
+查找当前目录下所有名为example.txt的文件：
+find . -name "example.txt"
+查找当前目录下所有以.txt结尾的文件
+find . -name "*.txt"
+-name改为-iname忽略大小写
+搜索包含特定字符串的行
+grep "hello" file.txt
+-i忽略大小写
+递归搜索/path/to/directory目录及其子目录中的所有文件，查找包含“hello”字符串的行。
+grep -r "hello" /path/to/directory
+查看文件内容-n显示序号
+cat -n requirements.txt

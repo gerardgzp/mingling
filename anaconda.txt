@@ -1,0 +1,2 @@
+conda config --append envs_dir d:afad/fsd/af/  增加虚拟环境路径
+#/home/zcy/.conda/envs/pre_img_env/bin/python3.9 /home/zcy/.pycharm_helpers/packaging_tool.py install qianfan 服务器终端安装依赖指令

@@ -1,1 +1,8 @@
-pip config set global.index-url http...........  
+pip config set global.index-url http...........
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  #永久配置清华源
+pip install some-package -i https://pypi.tuna.tsinghua.edu.cn/simple  #某个包临时配置清华源
+其他源：
+清华大学开源软件镜像站：https://pypi.tuna.tsinghua.edu.cn/simple
+阿里云开源镜像站：https://mirrors.aliyun.com/pypi/simple/
+豆瓣：https://pypi.douban.com/simple/
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/

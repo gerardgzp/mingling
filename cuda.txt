@@ -1,0 +1,7 @@
+
+nvidia -smi
+nvcc -V  检查是否已经安装了NVIDIA的CUDA Toolkit
+进入pytorch官网查找相关version的版本
+python
+》import torch
+》torch.cuda.is_available()  看是否返回TRUE

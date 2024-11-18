@@ -39,3 +39,14 @@ GitLab:
 ip：http://192.168.1.136:3000/users/sign_in
 账号：wuyingdong
 密码：13631890992
+
+
+docker
+sudo docker run -itd -p 8000:8080 -v $(pwd)/flask_pre_image:/flask_pre_image --name flask_vue1 my_image
+端口映射并挂载文件夹
+重新配置python环境，
+先安装依赖
+删除之前的版本并安装 pip install Werkzeug==2.0.3#跟Flask相同
+pip install pillow-avif-plugin
+pip install python-docx
+pip install flask_cors

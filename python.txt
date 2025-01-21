@@ -6,3 +6,5 @@ pip install some-package -i https://pypi.tuna.tsinghua.edu.cn/simple  #某个包
 阿里云开源镜像站：https://mirrors.aliyun.com/pypi/simple/
 豆瓣：https://pypi.douban.com/simple/
 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+# coding=utf-8，解决编码问题

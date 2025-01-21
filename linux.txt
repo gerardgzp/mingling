@@ -42,3 +42,5 @@ grep "hello" file.txt
 grep -r "hello" /path/to/directory
 查看文件内容-n显示序号
 cat -n requirements.txt
+给目录最高权限
+sudo chmod -R 777 flask_pre_image

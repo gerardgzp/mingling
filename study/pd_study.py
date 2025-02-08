@@ -4,11 +4,8 @@ csv_path=r"D:\aguo\数据集\临时\archive\Titanic-Dataset.csv"
 df=pd.read_csv(csv_path)
 
 
-bool_series=pd.isnull(df['Age'])
-# print(bool_series)
-missing_gender_data = df[bool_series]
-print(missing_gender_data)
-
+result=df.groupby('Pclass').agg({'Fare':'mean','Survived':'mean'}).reset_index()
+print(result)
 
 
 

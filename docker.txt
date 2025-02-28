@@ -11,7 +11,7 @@ docker logs 日志
 docker inspect 容器详细信息
 docker exec -it my_container /bin/bash 进入
 exit 退出容器
-挂载
-
+端口映射并挂载文件夹
+sudo docker run -itd -p 8000:8080 -v $(pwd)/flask_pre_image:/flask_pre_image --name flask_vue1 my_image
 
 /home/zcy/anaconda3/etc/profile.d/conda.sh

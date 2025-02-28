@@ -1,5 +1,0 @@
-
-
-soup = BeautifulSoup(response.text, 'html.parser')
-a_labels = soup.find/_all/('a', class_='thumbnail') #利用bs4找到所有符合要求的a标签
-a_labels.get('href')/a_labels['href'] #get如果没有回返回None

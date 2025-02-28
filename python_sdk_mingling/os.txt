@@ -1,0 +1,47 @@
+os.path.abspath(path)                       返回指定路径的绝对路径。
+os.path.basename(path)                      返回路径中的文件名。
+os.path.commonprefix(list)                  返回list中，所有路径共有的最长的路径。
+os.path.dirname(path)                       返回文件路径的目录。
+os.path.exists(path)                        如果路径 path 存在，返回 True；如果路径 path 不存在，返回 False。
+os.path.getatime(path)                      返回文件或目录的最后访问时间。
+os.path.getmtime(path)                      返回文件或目录的最后修改时间。
+os.path.getsize(path)                       返回文件大小，如果文件不存在就返回错误。
+os.path.isabs(path)                         如果路径是绝对路径，返回 True。
+os.path.isfile(path)                        如果路径是一个存在的文件，返回 True。否则返回 False。
+os.path.isdir(path)                         如果路径是一个存在的目录，则返回 True。否则返回 False。
+os.path.join(path1[, path2[, ...]])         将多个路径组合后返回。
+os.path.normcase(path)                      转换路径的大小写和斜杠。
+os.path.split(path)                         把路径分割成dirname和basename，返回一个元组。
+os.path.splitdrive(path)                    一般用在windows下，返回驱动器名和路径组成的元组。
+os.path.splitext(path)                      分离文件名与扩展名，返回(f_name, f_extension)元组。
+
+os.chdir(path)                              更改当前工作目录。
+os.getcwd()                                 返回表示当前工作目录的字符串
+os.listdir(path='.')                        列出指定目录的所有文件和子目录。
+os.mkdir()                                  创建一个目录。
+os.makedirs()                               递归地创建目录。这意味着如果中间的某个目录不存在，这个函数将自动创建它。
+os.remove()                                 删除指定的文件。
+os.removedirs(name)                         递归删除空目录。
+os.rename(raw,new)                          用于重命名文件或目录。源文件或目录将被重命名为目标名称。如果目标文件或目录已经存在，它将被替换。
+os.replace()                                这个函数类似于 `os.rename()`，但如果目标文件或目录已经存在，它不会失败，而是替换它。
+os.rmdir()                                  删除空目录
+
+for dirpath, dirnames, filenames in os.walk()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

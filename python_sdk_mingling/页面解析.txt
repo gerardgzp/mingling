@@ -1,0 +1,59 @@
+---读取json文件
+with open(r'D:\acodes\gzp_mini\scrapy_all\meishiwo\law\mains.json','r',encoding='utf-8') as file:
+    data=json.load(file)
+---保存为json文件
+with open('law/not_all.json', 'w', encoding='utf-8') as file:
+    json.dump(self.xall, file, ensure_ascii=False, indent=4)
+---
+---将scrapy中response解析为json
+json_data = json.loads(response.body.decode('utf - 8'))
+---
+---scrapy的request格式
+scrapy.FormRequest(url=url,formdata=data,headers=headers,meta={'title': item_title},callback=self.parse_first_page)
+response.meta['title']
+---
+---将requests中response解析为json
+response.json()
+---
+
+---base64编码
+encoded = base64.b64encode(response.content)
+---
+---base64解码
+decoded_data = base64.b64decode(encoded_data)
+with open('filename.jpg', 'wb') as file:
+    file.write(decoded_data)
+---
+
+---re正则
+pattern = r'(.*?)(\d+)(.*)'#.*任意字符任意数量?到下一个（）及时停止，\d表示[0-9]任意数字+表示至少一个数字
+match = re.match(pattern, text)
+match.group(1),match.group(2),match.group(3)#取到每个匹配项（）的内容
+---
+---bs4
+soup = BeautifulSoup(response.text, 'html.parser')
+a_labels = soup.find/_all/('a', class_='thumbnail') #利用bs4找到所有符合要求的a标签
+a_labels.get('href')/a_labels['href'] #get如果没有回返回None
+---
+
+
+---try打印错误信息
+try:
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
+---
+---日期比较
+datetime.strptime(date1_str, "%Y-%m-%d") #将字符串转化为日期2024-01-21
+---
+
+
+---美化打印
+from pprint import pprint
+pprint(data)
+---
+
+
+---python脚本utf-8编码
+# -*- coding: utf-8 -*-
+---
+
